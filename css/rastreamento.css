@@ -1,0 +1,274 @@
+#delivery-tracking-section {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 4%;
+    box-sizing: border-box;
+}
+
+#tracking-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tracking-content {
+    margin-bottom: 40px;
+    margin-right: 0;
+}
+
+.tracking-title {
+    width: 100%;
+    max-width: 276px;
+    font-weight: 700;
+    font-size: 1.625rem;
+    letter-spacing: 0.1em;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+}
+
+.tracking-description {
+    width: 100%;
+    max-width: 874px;
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    padding-bottom: 40px;
+}
+
+.tracking-card {
+    width: 100%;
+    max-width: 1100px;
+    min-height: 160px;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-small);
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    gap: 35px;
+    background-color: var(--color-white);
+    box-sizing: border-box;
+}
+
+.tracking-card-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    border-radius: var(--radius-medium);
+    background-color: var(--color-green-transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.tracking-card-icon {
+    font-size: 50px;
+    color: var(--color-primary);
+}
+
+.tracking-order-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tracking-order-item {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+}
+
+.tracking-order-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-text-primary);
+    line-height: 1.4;
+}
+
+.tracking-order-text {
+    padding-top: 18px;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+#route-map-header {
+    margin-top: 60px;
+}
+
+.route-map-title {
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: var(--color-text-primary);
+}
+
+.route-map-divider {
+    width: 180px;
+    height: 12px;
+    border: none;
+    border-radius: var(--radius-medium);
+    background-color: var(--color-primary);
+    margin-top: 15px;
+}
+
+#delivery-map-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding-top: 45px;
+    margin-bottom: 60px;
+}
+
+#delivery-map {
+    width: 100%;
+    max-width: 1145px;
+    height: 563px;
+    border-radius: var(--radius-medium);
+    background-color: var(--color-background-light);
+    overflow: hidden;
+}
+
+#delivery-map img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#delivery-details-card {
+    width: 100%;
+    max-width: 500px;
+    min-height: 500px;
+    border-radius: var(--radius-medium);
+    box-shadow: var(--shadow-small);
+    padding: 35px;
+    background-color: var(--color-white);
+    box-sizing: border-box;
+}
+
+.delivery-details-title {
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-primary);
+    margin-bottom: 40px;
+}
+
+.delivery-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding-bottom: 35px;
+}
+
+.delivery-detail-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--color-green-transparent);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.delivery-detail-icon i {
+    font-size: 24px;
+    color: var(--color-primary);
+}
+
+.delivery-detail-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.delivery-detail-title {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--color-text-primary);
+}
+
+.delivery-detail-text {
+    padding-top: 10px;
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+}
+
+.delivery-estimate-date {
+    padding-top: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+@media (max-width: 1024px) {
+    #delivery-map-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #delivery-map,
+    #delivery-details-card {
+        max-width: 100%;
+    }
+
+    #delivery-map {
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    #delivery-tracking-section {
+        padding: 30px 5%;
+    }
+
+    .tracking-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 24px 20px;
+        gap: 20px;
+    }
+
+    .tracking-order-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .tracking-order-item {
+        max-width: 100%;
+    }
+
+    .tracking-order-text {
+        padding-top: 8px;
+    }
+
+    .route-map-title {
+        font-size: 1.75rem;
+    }
+
+    #delivery-map {
+        height: 300px;
+    }
+
+    #delivery-details-card {
+        padding: 24px 20px;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .delivery-detail-item {
+        gap: 12px;
+    }
+
+    .delivery-detail-icon {
+        width: 46px;
+        height: 46px;
+    }
+
+    .delivery-detail-icon i {
+        font-size: 18px;
+    }
+}

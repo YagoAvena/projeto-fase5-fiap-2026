@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart — Tecnologia contra o desperdício de alimentos</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/agrobot.css">
+      <script src="./js/global/header.js" defer></script>
+</head>
+
+<body>
+   <div id="header-root"></div>
+    <main>
+        <section id="conteudo">
+            <div>
+                <h1>Tecnologia que alimenta o futuro</h1>
+                <p id="p-home">O AgroSmart conecta pequenos produtores rurais à inteligência de dados — previsão
+                    climática, gestão da produção e marketplace direto. Menos desperdício. Mais colheita. Mais vida.</p>
+                <h2 id="link-yt">Acesse - <a href="">Guia da plataforma</a></h2>
+                <div id="img-home">
+                    <img src="./img/pexels-dongfang-xiaowu-112541598-34231778.jpg" alt="">
+                </div>
+            </div>
+            <div id="conteudo-2">
+                <div id="clima">
+                    <div id="caixa-folha">
+                        <i id="icone-folha" class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div id="textos-clima">
+                        <h2>Clima</h2>
+                        <p id="p-clima">Acompanhe as condições climáticas e veja se o clima está bom para o plantio</p>
+                    </div>
+                </div>
+                <div id="cards">
+
+                    <!-- CARD 1 -->
+                    <div class="divs-cards">
+
+                        <div class="card-header">
+                            <i id="icon-1" class="fa-solid fa-cloud-sun-rain"></i>
+                            <h3>Condições Atuais</h3>
+                        </div>
+
+                        <div class="card-info">
+
+                            <div class="info-row">
+                                <p class="info-label">Temperatura:</p>
+                                <span class="info-value">24 °C</span>
+                            </div>
+
+                            <div class="info-row">
+                                <p class="info-label">Umidade no Ar:</p>
+                                <span class="info-value">68%</span>
+                            </div>
+
+                            <div class="info-row">
+                                <p class="info-label">Precipitação:</p>
+                                <span class="info-value">5 mm</span>
+                            </div>
+
+                            <div class="info-row">
+                                <p class="info-label">Vento:</p>
+                                <span class="info-value">12km/h</span>
+                            </div>
+
+                            <div class="info-row">
+                                <p class="info-label">Radiação Solar:</p>
+                                <span class="info-value">Alta</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="divs-cards">
+
+                        <div class="card-header">
+                            <i id="icon-2" class="fa-solid fa-seedling"></i>
+                            <h3>Bom para o Plantio</h3>
+                        </div>
+
+                        <div class="card-info">
+
+                            <div class="planting-row">
+
+                                <div>
+                                    <p class="planting-title">Temperatura Ideal :</p>
+                                    <p class="planting-text">18°C - 30°C</p>
+                                </div>
+
+                                <div class="check-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="planting-row">
+
+                                <div>
+                                    <p class="planting-title">Umidade no Ar Ideal:</p>
+                                    <p class="planting-text">40% - 80%</p>
+                                </div>
+
+                                <div class="check-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="planting-row">
+
+                                <div>
+                                    <p class="planting-title">Precipitação Ideal</p>
+                                    <p class="planting-text">0 mm - 20 mm</p>
+                                </div>
+
+                                <div class="check-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                            </div>
+
+                            <div class="planting-row">
+
+                                <div>
+                                    <p class="planting-title">Vento Ideal</p>
+                                    <p class="planting-text">0km/h - 20km/h</p>
+                                </div>
+
+                                <div class="check-icon">
+                                    <i class="fa-solid fa-check"></i>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <button id="agrobot-btn">
+        <i class="fa-solid fa-seedling"></i>
+    </button>
+
+    <div id="agrobot-chat">
+
+        <div id="agrobot-header">
+
+            <div id="agrobot-info">
+
+                <span id="agrobot-title">
+                    <i class="fa-solid fa-seedling"></i>
+                    AgroBot IA
+                </span>
+
+                <small>● Online agora</small>
+
+            </div>
+
+            <button id="close-chat">✕</button>
+
+        </div>
+
+        <div id="agrobot-messages">
+
+            <div class="bot-message">
+                Olá! Sou o AgroBot 🌱
+            </div>
+
+
+            <div class="bot-message">
+                Como posso ajudar?
+            </div>
+
+        </div>
+
+        <div id="agrobot-options">
+
+            <button onclick="respostaClima()">
+                🌦️ Clima
+            </button>
+
+            <button onclick="respostaRastreamento()">
+                🚚 Entregas
+            </button>
+
+            <button onclick="respostaMarketplace()">
+                🛒 Marketplace
+            </button>
+
+            <button onclick="respostaPlantio()">
+                🌱 Plantio
+            </button>
+
+            <button onclick="respostaSuporte()">
+                📞 Suporte
+            </button>
+
+        </div>
+
+        <div id="agrobot-input-area">
+
+            <input type="text" id="agrobot-input" placeholder="Digite sua pergunta...">
+
+            <button onclick="enviarPergunta()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+     <script type="module" src="./src/main.jsx"></script>
+     <script src="./js/global/agrobot.js"></script>
+</body>
+
+</html>

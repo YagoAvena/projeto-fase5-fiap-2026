@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+/* =========================
+   CONTACT PAGE
+   ========================= */
+
+.contact-page {
+    width: 100%;
+}
+
+.contact-section {
+    padding-left: 3%;
+    display: flex;
+}
+
+.contact-image {
+    width: 40vw;
+    max-height: 100vh;
+    border-radius: var(--radius-medium);
+}
+
+
+/* =========================
+   CONTENT
+   ========================= */
+
+.contact-content {
+    max-width: 50vw;
+    margin: 30px;
+}
+
+
+/* =========================
+   TITLES
+   ========================= */
+
+.section-subtitle {
+    width: 248px;
+    padding-bottom: 20px;
+    font-size: 20pt;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.section-title {
+    max-width: 872px;
+    font-size: 30pt;
+    font-weight: 700;
+    color: var(--color-text-primary);
+}
+
+.section-divider {
+    width: 142px;
+    height: 12px;
+    border: none;
+    border-radius: var(--radius-medium);
+    background-color: var(--color-primary);
+}
+
+.section-description {
+    max-width: 780px;
+    margin-top: 5px;
+    padding-top: 35px;
+    font-size: 12pt;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--color-text-secondary);
+}
+
+.content-title {
+    width: 275px;
+    padding-top: 40px;
+    font-size: 18pt;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+
+/* =========================
+   CONTACT INFO
+   ========================= */
+
+.contact-info-grid {
+    display: flex;
+    padding-top: 30px;
+}
+
+.contact-card {
+    margin-right: 40px;
+}
+
+.contact-card-title {
+    padding-bottom: 10px;
+    font-size: 12pt;
+    font-weight: 700;
+}
+
+.contact-card-text {
+    font-size: 10pt;
+}
+
+
+/* =========================
+   FORM
+   ========================= */
+
+.contact-form-container {
+    width: 50vw;
+    padding-top: 30px;
+}
+
+.input-row {
+    display: flex;
+}
+
+.form-input {
+    width: 23.2vw;
+    height: 50px;
+    margin: 10px;
+    padding-left: 20px;
+
+    border: none;
+    border-radius: var(--radius-medium);
+
+    background-color: var(--color-background-light);
+
+    font-size: 12pt;
+    outline: none;
+}
+
+#message-input {
+    display: block;
+    width: 47vw;
+    height: 120px;
+    font-size: 12pt;
+}
+
+
+/* =========================
+   SUBMIT BUTTON
+   ========================= */
+
+.submit-button-container {
+    text-align: center;
+}
+
+#submit-button {
+    width: 8vw;
+    height: 4vh;
+    margin-top: 20px;
+
+    border: none;
+    border-radius: var(--radius-medium);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: 12pt;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        opacity var(--transition-default),
+        transform var(--transition-fast);
+}
+
+#submit-button:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .contact-section > img{
+        display: none;
+    }
+
+    .contact-content{
+        max-width: 95vw;
+
+    }
+
+
+    .contact-form-container{
+        width: 80vw;
+        padding-top: 30px;
+    }
+
+    #message-input{
+        display: block;
+        width: 78vw;
+    }
+
+
+    .form-input{
+        width: 40vw;
+        font-size: 12pt;
+        outline: none;
+    }
+
+    #submit-button{
+        width: 12vw;
+    }
+}
+
+
+@media screen and (max-width: 764px) {
+      
+    .section-description{
+        width: 80vw;
+    }
+
+    #submit-button{
+        width: 18vw;
+    }
+
+    .contact-info-grid{
+        flex-direction: column;
+    }
+
+    .contact-card{
+        padding-bottom: 20px;
+    }
+
+    .input-row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-input{
+        width: 78vw;
+    }
+} 

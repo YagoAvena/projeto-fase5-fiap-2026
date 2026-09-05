@@ -1,0 +1,132 @@
+/* =========================
+   TEXTS & SECTIONS
+   ========================= */
+
+.texts {
+    margin: 20px 0;
+}
+
+.section-subtitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.section-text {
+    max-width: 780px;
+    padding-top: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+}
+
+/* =========================
+   PRODUCT CARD
+   ========================= */
+
+.card product-card {
+    height: 100%;
+    border: none;
+    border-radius: var(--radius-medium, 12px);
+    overflow: hidden;
+    background: black;
+    box-shadow: var(--shadow-card, 0 4px 12px rgba(0, 0, 0, 0.08));
+    display: flex;
+    flex-direction: column;
+    margin: 0; 
+    transition: transform var(--transition-fast, 0.2s ease), box-shadow var(--transition-default, 0.3s ease);
+}
+
+.card product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.product-category {
+    font-size: 0.85rem;
+    font-weight: 500;
+    line-height: 1.4;
+    color: var(--color-text-secondary);
+    display: inline-block;
+}
+
+.product-title {
+    font-weight: 800;
+    font-size: 1.1rem;
+    line-height: 1.4;
+    color: var(--color-primary);
+    margin-bottom: 8px;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-text-secondary);
+    margin-bottom: 15px;
+}
+
+
+.product-price {
+    font-weight: 800;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    line-height: 1.2;
+    color: black;
+}
+
+.product-card .btn-buy {
+    letter-spacing: 1px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: var(--radius-small, 6px);
+    transition: background-color var(--transition-default, 0.3s ease), color var(--transition-default, 0.3s ease);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.product-card .btn-buy:hover {
+    color: var(--color-white, #ffffff);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+
+/* =========================
+   MEDIA QUERIES (RESPONSIVIDADE)
+   ========================= */
+
+@media (max-width: 576px) {
+    .section-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .section-text {
+        font-size: 0.95rem;
+    }
+
+    #agrobot-chat {
+        right: 15px;
+        left: 15px;
+        width: auto;
+        bottom: 85px;
+        height: 70vh;
+    }
+
+    #agrobot-btn {
+        bottom: 15px;
+        right: 15px;
+    }
+}

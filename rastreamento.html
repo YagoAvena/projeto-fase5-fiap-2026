@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css">
+    <title>AgroSmart — Rastreamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/rastreamento.css">
+    <link rel="stylesheet" href="./css/agrobot.css">
+    <script src="./js/global/header.js" defer></script>
+</head>
+
+<body>
+    <div id="header-root"></div>
+    <main>
+        <section id="delivery-tracking-section">
+            <div id="tracking-header">
+
+                <!-- Cabeçalho -->
+                <div class="tracking-content">
+                    <h1 class="tracking-title">RASTREAMENTO DE ENTREGA</h1>
+
+                    <p class="tracking-description">
+                        Acompanhe em tempo real o percurso da sua entrega, desde a origem até o destino final.
+                        Mais transparência, mais controle, menos desperdício.
+                    </p>
+                </div>
+
+                <!-- Card Principal -->
+                <div class="tracking-card">
+
+                    <!-- Ícone -->
+                    <div class="tracking-card-icon-wrapper">
+                        <div class="tracking-card-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+                    </div>
+
+                    <!-- Informações do Pedido -->
+                    <div class="tracking-order-info">
+
+                        <div class="tracking-order-item">
+                            <h3 class="tracking-order-title">
+                                Pedido <br> #AS47829
+                            </h3>
+
+                            <p class="tracking-order-text">
+                                Alface Crespa - 600KG
+                            </p>
+                        </div>
+
+                        <div class="tracking-order-item">
+                            <h3 class="tracking-order-title">
+                                Origem Sítio Boa Esperança
+                            </h3>
+
+                            <p class="tracking-order-text">
+                                São José do Rio Preto - SP
+                            </p>
+                        </div>
+
+                        <div class="tracking-order-item">
+                            <h3 class="tracking-order-title">
+                                Destino Supermercado Verde Mais
+                            </h3>
+
+                            <p class="tracking-order-text">
+                                São Paulo - SP
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Título do mapa -->
+            <div id="route-map-header">
+                <h2 class="route-map-title">Mapa da Rota</h2>
+                <hr class="route-map-divider">
+            </div>
+
+            <!-- Conteúdo mapa + infos -->
+            <div id="delivery-map-container">
+
+                <!-- Mapa -->
+                <div id="delivery-map">
+                    <img src="./img/MapaRotas.png" alt="Mapa da rota da entrega">
+                </div>
+
+                <!-- Informações -->
+                <div id="delivery-details-card">
+
+                    <h3 class="delivery-details-title">
+                        Informações da Entrega
+                    </h3>
+
+                    <!-- Informação -->
+                    <!-- Informação -->
+                    <div class="delivery-detail-item">
+
+                        <div class="delivery-detail-icon">
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+
+                        <div class="delivery-detail-content">
+                            <h3 class="delivery-detail-title">
+                                Motorista
+                            </h3>
+
+                            <p class="delivery-detail-text">
+                                João Marcos
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Informação -->
+                    <div class="delivery-detail-item">
+
+                        <div class="delivery-detail-icon">
+                            <i class="fa-solid fa-truck"></i>
+                        </div>
+
+                        <div class="delivery-detail-content">
+                            <h3 class="delivery-detail-title">
+                                Veículo
+                            </h3>
+
+                            <p class="delivery-detail-text">
+                                ABC-124
+                            </p>
+
+                            <p class="delivery-detail-text">
+                                Caminhão Refrigerado
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Informação -->
+                    <div class="delivery-detail-item">
+
+                        <div class="delivery-detail-icon">
+                            <i class="fa-solid fa-route"></i>
+                        </div>
+
+                        <div class="delivery-detail-content">
+                            <h3 class="delivery-detail-title">
+                                Distância Total
+                            </h3>
+
+                            <p class="delivery-detail-text">
+                                445 KM
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Informação -->
+                    <div class="delivery-detail-item">
+
+                        <div class="delivery-detail-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+
+                        <div class="delivery-detail-content">
+                            <h3 class="delivery-detail-title">
+                                Tempo Estimado
+                            </h3>
+
+                            <p class="delivery-detail-text">
+                                5h 20min
+                            </p>
+
+                            <p class="delivery-estimate-date">
+                                Previsão: 24/05 às 16:00
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <button id="agrobot-btn">
+        <i class="fa-solid fa-seedling"></i>
+    </button>
+
+    <div id="agrobot-chat">
+
+        <div id="agrobot-header">
+
+            <div id="agrobot-info">
+
+                <span id="agrobot-title">
+                    <i class="fa-solid fa-seedling"></i>
+                    AgroBot IA
+                </span>
+
+                <small>● Online agora</small>
+
+            </div>
+
+            <button id="close-chat">✕</button>
+
+        </div>
+
+        <div id="agrobot-messages">
+
+            <div class="bot-message">
+                Olá! Sou o AgroBot 🌱
+            </div>
+
+
+            <div class="bot-message">
+                Como posso ajudar?
+            </div>
+
+        </div>
+
+        <div id="agrobot-options">
+
+            <button onclick="respostaClima()">
+                🌦️ Clima
+            </button>
+
+            <button onclick="respostaRastreamento()">
+                🚚 Entregas
+            </button>
+
+            <button onclick="respostaMarketplace()">
+                🛒 Marketplace
+            </button>
+
+            <button onclick="respostaPlantio()">
+                🌱 Plantio
+            </button>
+
+            <button onclick="respostaSuporte()">
+                📞 Suporte
+            </button>
+
+        </div>
+
+        <div id="agrobot-input-area">
+
+            <input type="text" id="agrobot-input" placeholder="Digite sua pergunta...">
+
+            <button onclick="enviarPergunta()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+    <script type="module" src="./src/main.jsx"></script>
+    <script src="./js/global/agrobot.js"></script>
+</body>
+
+</html>

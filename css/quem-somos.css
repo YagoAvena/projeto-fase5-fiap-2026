@@ -1,0 +1,149 @@
+/* =========================
+   ABOUT
+   ========================= */
+
+#conteudo {
+    margin: 30px;
+    width: 100%;
+    display: flex;
+    min-height: 80vh;
+    padding-left: 3%;
+}
+
+#conteudo img {
+    width: 43.5vw;
+
+    border-radius: var(--radius-medium);
+
+    margin-right: 30px;
+    margin-left: 40px;
+}
+
+#texts {
+    margin-top: 5%;
+}
+
+
+/* =========================
+   TITLES
+   ========================= */
+
+h2 {
+    width: 276px;
+
+    font-weight: 700;
+    font-size: 20pt;
+    letter-spacing: 10%;
+
+    color: var(--color-primary);
+
+    padding-bottom: 20px;
+}
+
+h1 {
+    width: 872px;
+
+    font-weight: 700;
+    font-size: 30pt;
+
+    color: var(--color-text-primary);
+
+    padding-bottom: 5px;
+}
+
+hr {
+    width: 256px;
+    height: 12px;
+
+    border: none;
+    border-radius: var(--radius-medium);
+
+    background-color: var(--color-primary);
+
+    margin-bottom: 40px;
+}
+
+.p-introdução {
+    width: 874px;
+
+    font-weight: 400;
+    font-size: 12pt;
+
+    color: var(--color-text-secondary);
+
+    padding-bottom: 40px;
+}
+
+@media (max-width: 768px) {
+    #conteudo {
+        display: flex;
+        flex-direction: column; /* Empilha o texto e a imagem */
+        width: 100%;
+        min-height: auto;
+        margin: 0;
+        padding: 20px 16px; /* Espaçamento interno seguro nas laterais */
+    }
+
+    #texts {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* TITULOS E ELEMENTOS */
+
+    h2 {
+        width: 100%;
+        max-width: 100%;
+        font-weight: 700;
+        font-size: 1.1rem;
+        letter-spacing: 0.05em;
+        color: var(--color-primary);
+        padding-bottom: 8px;
+    }
+
+    h1 {
+        width: 100%; /* Permite que o título ocupe até 100% da tela */
+        max-width: 100%;
+        font-weight: 700;
+        font-size: 1.75rem;
+        line-height: 1.25;
+        color: var(--color-text-primary);
+        padding-bottom: 12px;
+        word-break: break-word; /* Evita estouro de palavras longas */
+    }
+
+    hr {
+        width: 100%;
+        max-width: 180px; /* Mantém a linha proporcional sem esticar tudo */
+        height: 6px;
+        border: none;
+        border-radius: var(--radius-medium);
+        background-color: var(--color-primary);
+        margin: 0 0 24px 0;
+    }
+
+    /* Ajuste da classe do parágrafo */
+    .p-introducao,
+    .p-introdução,
+    #texts p {
+        width: 100%;
+        max-width: 100%;
+        font-weight: 400;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        color: var(--color-text-secondary);
+        padding-bottom: 16px;
+        word-wrap: break-word; /* Força a quebra do texto dentro da tela */
+    }
+
+    /* AJUSTE DA IMAGEM */
+
+    #conteudo img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: var(--radius-medium);
+        margin: 16px 0 0 0; /* Zera as margens fixas em pixels das laterais */
+        object-fit: cover;
+    }
+}

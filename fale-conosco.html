@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroSmart — Fale Conosco</title>
+    <link rel="stylesheet" href="./css/fale-conosco.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/agrobot.css">
+    <script src="./js/global/header.js" defer></script>
+
+</head>
+
+<body>
+
+    <div id="header-root"></div>
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <div class="contact-content">
+                <div class="contact-introduction">
+                    <div class="section-heading">
+                        <h2 class="section-subtitle">Fale Conosco</h2>
+                        <h1 class="section-title">
+                            Vamos Conversar?
+                        </h1>
+                        <hr class="section-divider">
+                        <p class="section-description">
+                            Tem dúvidas, sugestões ou quer saber mais sobre a AgroSmart?
+                            Preencha o formulário ou utilize nossos canais de atendimento.
+                            Nossa equipe está pronta para ajudar você a transformar o campo
+                            com tecnologia, inovação e soluções inteligentes para uma produção
+                            mais eficiente e sustentável.
+                        </p>
+                        <p class="section-description">
+                            Entre em contato para conhecer melhor nossos serviços, tirar dúvidas
+                            sobre monitoramento, rastreamento e gestão agrícola, ou descobrir
+                            como a AgroSmart pode facilitar o dia a dia no agronegócio.
+                            Será um prazer conversar com você e encontrar a melhor solução
+                            para sua necessidade.
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-info">
+                    <h3 class="content-title">
+                        Canais de atendimento
+                    </h3>
+                    <div class="contact-info-grid">
+                        <div class="contact-card">
+                            <h4 class="contact-card-title">
+                                Telefone
+                            </h4>
+                            <p class="contact-card-text">
+                                (11) 12345-6789
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <h4 class="contact-card-title">
+                                Whatsapp
+                            </h4>
+                            <p class="contact-card-text">
+                                (11) 12345-6789
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <h4 class="contact-card-title">
+                                Email
+                            </h4>
+                            <p class="contact-card-text">
+                                email@email.com
+                            </p>
+                        </div>
+                        <div class="contact-card">
+                            <h4 class="contact-card-title">
+                                Horário de Atendimento
+                            </h4>
+                            <p class="contact-card-text">
+                                Segunda a Sexta, das 8h às 18h
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-section">
+                    <h3 class="content-title">
+                        Mande sua Mensagem
+                    </h3>
+                    <div class="contact-form-container">
+                        <form action="" class="contact-form">
+                            <div class="form-fields">
+                                <div class="input-row">
+                                    <input type="text" name="Nome" id="name" placeholder="Digite seu nome" required
+                                        class="form-input">
+                                    <input type="email" name="Email" placeholder="Informe seu Email" required
+                                        class="form-input">
+                                </div>
+                                <input id="message-input" type="text" name="Descrição"
+                                    placeholder="Conte-nos sua mensagem" class="form-input" maxlength="500" required>
+                            </div>
+                            <div class="submit-button-container">
+                                <button id="submit-button">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <img src="./img/geralt-business-10174566.jpg" alt="Imagem agricultura"
+                class="contact-image">
+
+        </section>
+    </main>
+    <button id="agrobot-btn">
+        <i class="fa-solid fa-seedling"></i>
+    </button>
+
+    <div id="agrobot-chat">
+
+        <div id="agrobot-header">
+
+            <div id="agrobot-info">
+
+                <span id="agrobot-title">
+                    <i class="fa-solid fa-seedling"></i>
+                    AgroBot IA
+                </span>
+
+                <small>● Online agora</small>
+
+            </div>
+
+            <button id="close-chat">✕</button>
+
+        </div>
+
+        <div id="agrobot-messages">
+
+            <div class="bot-message">
+                Olá! Sou o AgroBot 🌱
+            </div>
+
+
+            <div class="bot-message">
+                Como posso ajudar?
+            </div>
+
+        </div>
+
+        <div id="agrobot-options">
+
+            <button onclick="respostaClima()">
+                🌦️ Clima
+            </button>
+
+            <button onclick="respostaRastreamento()">
+                🚚 Entregas
+            </button>
+
+            <button onclick="respostaMarketplace()">
+                🛒 Marketplace
+            </button>
+
+            <button onclick="respostaPlantio()">
+                🌱 Plantio
+            </button>
+
+            <button onclick="respostaSuporte()">
+                📞 Suporte
+            </button>
+
+        </div>
+
+        <div id="agrobot-input-area">
+
+            <input type="text" id="agrobot-input" placeholder="Digite sua pergunta...">
+
+            <button onclick="enviarPergunta()">
+                ➤
+            </button>
+
+        </div>
+
+    </div>
+    <script type="module" src="./src/main.jsx"></script>
+    <script src="./js/global/agrobot.js"></script>
+    <script src="./js/fale-conosco/fale-conosco.js"></script>
+</body>
+
+</html>

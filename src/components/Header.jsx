@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Logo from '../../img/AgroSmart.png'
 
 function Header() {
     const [darkMode, setDarkMode] = useState(() => {
@@ -30,7 +29,7 @@ function Header() {
         <div className="header-left">
           <a href="./index.html" className="header-logo-link">
             <img
-              src={Logo}
+              src="./img/AgroSmart.png"
               alt="Logo AgroSmart"
               className="logo-image"
             />
